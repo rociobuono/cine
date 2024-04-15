@@ -1,24 +1,14 @@
-
-
 const app = () =>{
 
-    const $inicio = document.getElementById("inicio");
-    const $cartelera = document.getElementById("cartelera");
-    const $combos = document.getElementById("combos");
+    const $inicio = document.getElementById("idInicio");
+    const $cartelera = document.getElementById("idCartelera");
+    const $combos = document.getElementById("idCombos");
     const $btnInicio = document.getElementById("btnInicio");
     const $btnCartelera = document.getElementById("btnCartelera");
     const $btnCombos = document.getElementById("btnCombos");
     const $idNav = document.getElementById("nav");
 
-    function crearLista($a){
-        let $ul = document.createElement("ul");
-        let $li = document.createElement("li");
-        $ul.appendChild($li);
-        $li.appendChild($a);
-
-        return $ul;
-    }
-    function crearA(id, href, txt){
+    const crearA = (id, href, txt) => {
         let $a = document.createElement("a");
         $a.setAttribute("id", id);
         $a.innerHTML = txt;
@@ -26,10 +16,17 @@ const app = () =>{
 
         return $a;
     }
-    
-    $idNav.appendChild(crearLista(crearA("inicio", "#inicio", "INICIO")));
-    $idNav.appendChild(crearLista(crearA("cartelera", "#cartelera", "CARTELERA")));
-    $idNav.appendChild(crearLista(crearA("combos", "#combos", "COMBOS")));
+    const crearLista = ($a) => {
+        let $ul = document.createElement("ul");
+        let $li = document.createElement("li");
+        $li.appendChild($a);
+        $ul.appendChild($li);
+        return $ul;
+    }
+    $idNav.appendChild(crearLista(crearA("idInicio", "#inicio", "INICIO")));
+    $idNav.appendChild(crearLista(crearA("idCartelera", "#cartelera", "CARTELERA")));
+    $idNav.appendChild(crearLista(crearA("idCombos", "#combos", "COMBOS")));
+
 
     function inicio(){
         $inicio.style.display = "block";
@@ -48,11 +45,10 @@ const app = () =>{
         $combos.style.display = "block";
     }
 
-    
+
     $btnInicio.addEventListener("click", () => { inicio(); });
     $btnCartelera.addEventListener("click", () => { cartelera(); });
-    $btnCombos.addEventListener("click", combos);
+    $btnCombos.addEventListener("click", () => { combos(); });
 }
 
 export default app;
-
