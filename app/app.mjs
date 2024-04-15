@@ -1,4 +1,5 @@
 
+
 const app = () =>{
 
     const $inicio = document.getElementById("inicio");
@@ -9,20 +10,15 @@ const app = () =>{
     const $btnCombos = document.getElementById("btnCombos");
     const $idNav = document.getElementById("nav");
 
-
-   
-    $btnInicio.addEventListener("click", () => { inicio(); });
-    $btnCartelera.addEventListener("click", () => { cartelera(); });
-    $btnCombos.addEventListener("click", combos);
-    
-    function crearLista ($a) {
+    function crearLista($a){
         let $ul = document.createElement("ul");
-        let $li = document.createElement("li");   
-        $li.appendChild($a);
+        let $li = document.createElement("li");
         $ul.appendChild($li);
+        $li.appendChild($a);
+
         return $ul;
     }
-    const crearA = (id, href, txt) => {
+    function crearA(id, href, txt){
         let $a = document.createElement("a");
         $a.setAttribute("id", id);
         $a.innerHTML = txt;
@@ -31,11 +27,9 @@ const app = () =>{
         return $a;
     }
     
-
     $idNav.appendChild(crearLista(crearA("inicio", "#inicio", "INICIO")));
     $idNav.appendChild(crearLista(crearA("cartelera", "#cartelera", "CARTELERA")));
     $idNav.appendChild(crearLista(crearA("combos", "#combos", "COMBOS")));
-
 
     function inicio(){
         $inicio.style.display = "block";
