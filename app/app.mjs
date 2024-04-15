@@ -1,4 +1,4 @@
-const app = () =>{
+const app = () => {
 
     const $inicio = document.getElementById("idInicio");
     const $cartelera = document.getElementById("idCartelera");
@@ -27,28 +27,29 @@ const app = () =>{
     $idNav.appendChild(crearLista(crearA("idCartelera", "#cartelera", "CARTELERA")));
     $idNav.appendChild(crearLista(crearA("idCombos", "#combos", "COMBOS")));
 
-
-    function inicio(){
-        $inicio.style.display = "block";
-        $combos.style.display = "none";
-        $cartelera.style.display = "none";
-    }
-    function cartelera(){
-        $inicio.style.display = "none";
-        $combos.style.display = "none";
-        $cartelera.style.display = "block";
-    }
-
-    function combos(){
-        $inicio.style.display = "none";
-        $cartelera.style.display = "none";
-        $combos.style.display = "block";
-    }
-
-
     $btnInicio.addEventListener("click", () => { inicio(); });
     $btnCartelera.addEventListener("click", () => { cartelera(); });
     $btnCombos.addEventListener("click", () => { combos(); });
+    
+    const opcionesNav = (id) => {
+        $inicio.style.display = "none";
+        $combos.style.display = "none";
+        $cartelera.style.display = "none";
+        switch (id) {
+            case idInicio:
+                $inicio.style.display = "block";
+                break;
+            case idCartelera:
+                $cartelera.style.display = "block";
+                break;
+            case idCombos:
+                $combos.style.display = "block";
+                break;
+            default:
+                break;
+        }
+    }
+
 }
 
 export default app;
