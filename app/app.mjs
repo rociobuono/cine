@@ -9,6 +9,8 @@ const app = () =>{
     const $btnCombos = document.getElementById("btnCombos");
     const $idNav = document.getElementById("nav");
 
+
+   
     $btnInicio.addEventListener("click", () => { inicio(); });
     $btnCartelera.addEventListener("click", () => { cartelera(); });
     $btnCombos.addEventListener("click", combos);
@@ -29,16 +31,12 @@ const app = () =>{
         return $a;
     }
     
-    //$idNav.appendChild(crearLista(crearA("inicio", "#inicio", "INICIO")));
-    const idNav = document.getElementById('idNav');
-if (!idNav) {
-    console.error('El elemento con ID "idNav" no existe en el DOM.');
-} else {
-    // Llamamos a crearA y crearLista, y añadimos el resultado a $idNav
-    const enlace = crearA("inicio", "#inicio", "INICIO");
-    const lista = crearLista(enlace);
-    idNav.appendChild(lista);
-}
+
+    $idNav.appendChild(crearLista(crearA("inicio", "#inicio", "INICIO")));
+    $idNav.appendChild(crearLista(crearA("cartelera", "#cartelera", "CARTELERA")));
+    $idNav.appendChild(crearLista(crearA("combos", "#combos", "COMBOS")));
+
+
     function inicio(){
         $inicio.style.display = "block";
         $combos.style.display = "none";
@@ -56,6 +54,10 @@ if (!idNav) {
         $combos.style.display = "block";
     }
 
+    
+    $btnInicio.addEventListener("click", () => { inicio(); });
+    $btnCartelera.addEventListener("click", () => { cartelera(); });
+    $btnCombos.addEventListener("click", combos);
 }
 
 export default app;
