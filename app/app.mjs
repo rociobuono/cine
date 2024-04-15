@@ -10,10 +10,6 @@ const app = () =>{
     const $btnCombos = document.getElementById("btnCombos");
     const $idNav = document.getElementById("nav");
 
-    $btnInicio.addEventListener("click", () => { inicio(); });
-    $btnCartelera.addEventListener("click", () => { cartelera(); });
-    $btnCombos.addEventListener("click", combos);
-    
     function crearLista($a){
         let $ul = document.createElement("ul");
         let $li = document.createElement("li");
@@ -32,6 +28,8 @@ const app = () =>{
     }
     
     $idNav.appendChild(crearLista(crearA("inicio", "#inicio", "INICIO")));
+    $idNav.appendChild(crearLista(crearA("cartelera", "#cartelera", "CARTELERA")));
+    $idNav.appendChild(crearLista(crearA("combos", "#combos", "COMBOS")));
 
     function inicio(){
         $inicio.style.display = "block";
@@ -50,6 +48,10 @@ const app = () =>{
         $combos.style.display = "block";
     }
 
+    
+    $btnInicio.addEventListener("click", () => { inicio(); });
+    $btnCartelera.addEventListener("click", () => { cartelera(); });
+    $btnCombos.addEventListener("click", combos);
 }
 
 export default app;
