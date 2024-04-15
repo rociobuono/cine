@@ -1,19 +1,22 @@
 ul {
-    list-style-type: none; /*sacar puntitos d adelante*/
-    margin-right: 50px;
-   
-  }
-  
-  li {
-    display: inline-block;
-    padding: 10px;
-  }
-  #inicio {
-    display: block;
-  }
-  #cartelera {
-    display: none;
-  }
-  #combos {
-    display: none;
-  }
+  list-style-type: none;
+  /*sacar puntitos d adelante*/
+  margin-right: 50px;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+#inicio {
+  display: block;
+}
+
+#cartelera {
+  display: none;
+}
+
+#combos {
+  display: none;
+}
