@@ -9,14 +9,14 @@ li {
   padding: 10px;
 }
 
-#inicio {
+#sectInicio {
   display: block;
 }
 
-#cartelera {
+#sectCartelera {
   display: none;
 }
 
-#combos {
+#sectCombos {
   display: none;
 }

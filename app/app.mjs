@@ -3,10 +3,10 @@ const app = () => {
     const $inicio = document.getElementById("idInicio");
     const $cartelera = document.getElementById("idCartelera");
     const $combos = document.getElementById("idCombos");
-    const $btnInicio = document.getElementById("btnInicio");
-    const $btnCartelera = document.getElementById("btnCartelera");
-    const $btnCombos = document.getElementById("btnCombos");
     const $idNav = document.getElementById("nav");
+    const $sectInicio = document.getElementById("sectInicio");
+    const $sectCombos = document.getElementById("sectCombos");
+    const $sectCartelera = document.getElementById("sectCartelera");
 
     const crearA = (id, href, txt) => {
         let $a = document.createElement("a");
@@ -23,33 +23,35 @@ const app = () => {
         $ul.appendChild($li);
         return $ul;
     }
-    $idNav.appendChild(crearLista(crearA("idInicio", "#inicio", "INICIO")));
-    $idNav.appendChild(crearLista(crearA("idCartelera", "#cartelera", "CARTELERA")));
-    $idNav.appendChild(crearLista(crearA("idCombos", "#combos", "COMBOS")));
+    $idNav.appendChild(crearLista(crearA("idInicio", "#sectInicio", "INICIO")));
+    $idNav.appendChild(crearLista(crearA("idCartelera", "#sectCartelera", "CARTELERA")));
+    $idNav.appendChild(crearLista(crearA("idCombos", "#sectCombos", "COMBOS")));
 
-    $btnInicio.addEventListener("click", () => { inicio(); });
-    $btnCartelera.addEventListener("click", () => { cartelera(); });
-    $btnCombos.addEventListener("click", () => { combos(); });
-    
-    const opcionesNav = (id) => {
-        $inicio.style.display = "none";
-        $combos.style.display = "none";
-        $cartelera.style.display = "none";
-        switch (id) {
-            case idInicio:
-                $inicio.style.display = "block";
-                break;
-            case idCartelera:
-                $cartelera.style.display = "block";
-                break;
-            case idCombos:
-                $combos.style.display = "block";
-                break;
-            default:
-                break;
-        }
+    const crearH = (num, id, txt) => {
+        let $h = document.createElement(`h${num}`);
+        $h.innerHTML = txt;
+        $h.setAttribute("id", id);
+        return $h;
     }
+    $sectInicio.appendChild(crearH(1, "tituloInicio", "ESTE ES EL INICIO"));
+    $sectCombos.appendChild(crearH(1, "tituloCombos", "ESTA ES LA SECCION COMBOS"));
+    $sectCartelera.appendChild(crearH(1, "tituloCartelera", "ESTA ES LA CARTELERA"));
 
+    $inicio.addEventListener("click", () => { 
+        $sectInicio.style.display = "block"; 
+        $sectCombos.style.display = "none";
+        $sectCartelera.style.display = "none";
+    });
+    $cartelera.addEventListener("click", () => { 
+        $sectCartelera.style.display = "block"; 
+        $sectCombos.style.display = "none";
+        $sectInicio.style.display = "none";
+    });
+    $combos.addEventListener("click", () => {
+        $sectCombos.style.display = "block"; 
+        $sectCartelera.style.display = "none";
+        $sectInicio.style.display = "none";
+    });
 }
 
 export default app;
