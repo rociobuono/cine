@@ -1,8 +1,5 @@
 const app = () => {
 
-    const $inicio = document.getElementById("idInicio");
-    const $cartelera = document.getElementById("idCartelera");
-    const $combos = document.getElementById("idCombos");
     const $idNav = document.getElementById("nav");
     const $sectInicio = document.getElementById("sectInicio");
     const $sectCombos = document.getElementById("sectCombos");
@@ -27,6 +24,10 @@ const app = () => {
     $idNav.appendChild(crearLista(crearA("idCartelera", "#sectCartelera", "CARTELERA")));
     $idNav.appendChild(crearLista(crearA("idCombos", "#sectCombos", "COMBOS")));
 
+    const $inicio = document.getElementById("idInicio");
+    const $cartelera = document.getElementById("idCartelera");
+    const $combos = document.getElementById("idCombos");
+    
     const crearH = (num, id, txt) => {
         let $h = document.createElement(`h${num}`);
         $h.innerHTML = txt;
