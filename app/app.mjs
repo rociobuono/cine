@@ -27,7 +27,7 @@ const app = () => {
     const $inicio = document.getElementById("idInicio");
     const $cartelera = document.getElementById("idCartelera");
     const $combos = document.getElementById("idCombos");
-    
+
     const crearH = (num, id, txt) => {
         let $h = document.createElement(`h${num}`);
         $h.innerHTML = txt;
@@ -37,7 +37,7 @@ const app = () => {
     $sectInicio.appendChild(crearH(1, "tituloInicio", "ESTE ES EL INICIO"));
     $sectCombos.appendChild(crearH(1, "tituloCombos", "ESTA ES LA SECCION COMBOS"));
     $sectCartelera.appendChild(crearH(1, "tituloCartelera", "ESTA ES LA CARTELERA"));
-
+    
     $inicio.addEventListener("click", () => { 
         $sectInicio.style.display = "block"; 
         $sectCombos.style.display = "none";
