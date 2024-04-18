@@ -2,22 +2,23 @@
 
 /*NAVBAR*/
 .navbar {
-  text-align: center; 
-  align-items: center; 
+  text-align: center;
+  align-items: center;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   position: sticky;
   background-color: black;
   font: bold 17px/1.4 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
-  
+
 }
 
 ul {
-  list-style-type: none; /*sacar puntitos d adelante */
-  display: inline-block; 
+  list-style-type: none;
+  /*sacar puntitos d adelante */
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -35,6 +36,7 @@ li {
   text-decoration: none;
   margin-left: 15px;
 }
+
 #logoNavbar {
   /* display: inline-block; */
   max-width: 80px;
@@ -42,6 +44,7 @@ li {
   margin: 10px;
   margin-right: 20px;
 }
+
 body {
   margin: 0px;
 }
@@ -60,43 +63,65 @@ body {
 
 /*CAROUSEL*/
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
+
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 960px;
+  height: 353px;
   position: relative;
   margin: auto;
 }
+
 .mySlides {
   display: none;
+  width: 100%;
+  height: 100%;
 }
-#prev, #next {
+
+#prev,
+#next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  /* margin-top: -22px; */
   padding: 16px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
+  /* border-radius: 0 3px 3px 0; */
+  transform: translateY(-50%);
 }
+
 #next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-/*Efectos hover de los botones prev y next*/
-#prev:hover, #next:hover {
-  background-color: rgba(0,0,0,0.8);
+
+#next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
 }
+
+/*Efectos hover de los botones prev y next*/
+#prev:hover,
+#next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
