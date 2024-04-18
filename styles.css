@@ -38,6 +38,7 @@ li {
   /* display: inline-block; */
   max-width: 80px;
   height: auto;
+  margin: 10px;
   margin-right: 20px;
 }
 body {
