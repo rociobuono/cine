@@ -33,6 +33,7 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   text-decoration: none;
+  margin-left: 15px;
 }
 #logoNavbar {
   /* display: inline-block; */
