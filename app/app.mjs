@@ -1,5 +1,5 @@
 const app = () => {
-
+    
     const $idNav = document.getElementById("nav");
     const $sectInicio = document.getElementById("sectInicio");
     const $sectCombos = document.getElementById("sectCombos");
@@ -13,6 +13,13 @@ const app = () => {
 
         return $a;
     }
+    const crearImg = (id, clase, src) => {
+        let $img = document.createElement("img");
+        $img.setAttribute("id", id);
+        $img.src = src;
+        $img.class = clase;
+        return $img;
+    }
     const crearLista = ($a) => {
         let $ul = document.createElement("ul");
         let $li = document.createElement("li");
@@ -20,6 +27,7 @@ const app = () => {
         $ul.appendChild($li);
         return $ul;
     }
+    $idNav.appendChild(crearImg("logoNavbar", "logo", "./resources/Logo.png"));
     $idNav.appendChild(crearLista(crearA("idInicio", "#sectInicio", "INICIO")));
     $idNav.appendChild(crearLista(crearA("idCartelera", "#sectCartelera", "CARTELERA")));
     $idNav.appendChild(crearLista(crearA("idCombos", "#sectCombos", "COMBOS")));
