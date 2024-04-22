@@ -31,3 +31,15 @@ export const crearH = (num, id, txt) => {
     $h.setAttribute("id", id);
     return $h;
 }
+export const crearSelect = (name, id) => {
+    let $select = document.createElement("select");
+    $select.name = name;
+    $select.setAttribute("id", id);
+    return $select;
+}
+export const crearOption = (value, txt) => {
+    let $option = document.createElement("option");
+    $option.value = value;
+    $option.innerHTML = txt;
+    return $option;
+}
