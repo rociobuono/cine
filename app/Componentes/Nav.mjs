@@ -1,4 +1,4 @@
-import { crearAhref,crearLista, crearH } from "./functions.mjs";
+import { crearImg, crearAhref,crearLista, crearH } from "./functions.mjs";
 const Nav = () => {
     const $idNav = document.getElementById("nav");
     const $sectInicio = document.getElementById("sectInicio");
@@ -23,7 +23,7 @@ const Nav = () => {
     $combos.addEventListener('mouseout', () =>{$combos.style.color ="#fff"});
 
    
-    $sectInicio.appendChild(crearH(1, "tituloInicio", "ESTE ES EL INICIO")); //Titulos de las secciones
+ 
     $sectCombos.appendChild(crearH(1, "tituloCombos", "ESTA ES LA SECCION COMBOS"));
     $sectCartelera.appendChild(crearH(1, "tituloCartelera", "ESTA ES LA CARTELERA"));
 

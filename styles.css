@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*NAVBAR*/
 .navbar {
   text-align: center;
@@ -47,10 +47,13 @@ li {
 
 body {
   margin: 0px;
+  background-color: #CFDEDF;
 }
 
 #sectInicio {
   display: block;
+  background-color: #CFDEDF;
+  margin-top: 80px;
 }
 
 #sectCartelera {
@@ -79,7 +82,21 @@ body {
   width: 100%;
   height: 100%;
 }
-
+#tituloImg1,#tituloImg2,#tituloImg3  {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 25px;
+  position: absolute;
+  bottom: 8px;
+  right: 0 px;
+  width: 100%;
+  z-index: 9999;
+  text-align: right;
+  float: none;
+  background: linear-gradient(to right, rgba(17,17,17,0) 0%, rgba(89,89,89,0) 0%, rgba(28,28,28,0) 0%, rgba(43,43,43,0) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.79) 100%);
+  font-family: 'poppins';
+  font-size: 22px;
+}
 #prev,
 #next {
   cursor: pointer;
