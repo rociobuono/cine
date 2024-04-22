@@ -1,4 +1,4 @@
-import { crearA,  crearImg, crearH} from "./functions.mjs";
+import { crearA,crearImg, crearH } from "./functions.mjs";
 const Carousel = () => {
   const $img1Div = document.getElementById("img1");
   const $img2Div = document.getElementById("img2");
