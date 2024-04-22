@@ -17,9 +17,9 @@ const Carousel = () => {
   $tituloImgDiv1.appendChild(crearH(1, "tituloImg1", "KUNG FU PANDA"));
   $tituloImgDiv2.appendChild(crearH(1, "tituloImg2", "LA PRIMERA PROFECIA"));
   $tituloImgDiv3.appendChild(crearH(1, "tituloImg3", "SPY FAMILY"));
-  $paginationDiv.appendChild(crearA("pagination1","1--1"));
-  $paginationDiv.appendChild(crearA("pagination2","2--2"));
-  $paginationDiv.appendChild(crearA("pagination3","3--3"));
+  $paginationDiv.appendChild(crearA("pagination1","1"));
+  $paginationDiv.appendChild(crearA("pagination2","2"));
+  $paginationDiv.appendChild(crearA("pagination3","3"));
 
 
   function showSlides(n) {
