@@ -1,21 +1,11 @@
+import { crearA,  crearImg} from "./functions.mjs";
 const Carousel = () => {
   const $img1Div = document.getElementById("img1");
   const $img2Div = document.getElementById("img2");
   const $img3Div = document.getElementById("img3");
   const $carousel = document.getElementById("carousel");
-
-  const crearA = (id, txt) => {
-    let $a = document.createElement("a");
-    $a.setAttribute("id", id);
-    $a.innerHTML = txt;
-    return $a;
-  }
-  const crearImg = (id, src) => {
-    let $img = document.createElement("img");
-    $img.setAttribute("id", id);
-    $img.src = src;
-    return $img;
-  }
+  
+ 
   $img1Div.appendChild(crearImg("imagen1", "./resources/peliculas/kungFuPanda.jpg"));
   $img2Div.appendChild(crearImg("imagen2", "./resources/peliculas/laPrimeraProfecia.jpg"));
   $img3Div.appendChild(crearImg("imagen3", "./resources/peliculas/spyFamily.jpg"));
