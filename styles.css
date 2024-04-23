@@ -105,6 +105,7 @@ li {
   padding: 8px 12px 6px;
   font-family: 'poppins', sans-serif;
   font-weight: 500;
+  cursor: pointer;
 }
 .slideshow-container {
   max-width: 960px;
@@ -118,7 +119,7 @@ li {
   width: 100%;
   height: 100%;
 }
-#tituloImg1,#tituloImg2,#tituloImg3  {
+#tituloImg1,#tituloImg2,#tituloImg3, #tituloImg4, #tituloImg5  {
   color: #f2f2f2;
   font-size: 15px;
   padding: 25px;
@@ -146,6 +147,7 @@ li {
   user-select: none;
   /* border-radius: 0 3px 3px 0; */
   transform: translateY(-50%);
+  font: 30px 'Poppins', sans-serif; 
 }
 
 #next {
