@@ -7,11 +7,10 @@ body {
 }
 #centrar {
   overflow: hidden;
-    width: 1600px;
+    width: 1200px;
     margin: 0 auto;
     /* background-color: #CFDEDF;  */
     background-color: #FDF3E4;
-    height: 800px;
 }
 /*----------------------NAVBAR----------------------*/
 .navbar {
@@ -76,8 +75,7 @@ li {
 /* SELECT BOX */
 #selectBox {
   max-width: 960px;
-  margin-left: 30px;
-  /* margin-bottom: 20px;  */
+  margin-left: 30px; 
 }
 
 #selectPeliculas {
@@ -97,7 +95,7 @@ li {
 #pagination {
   text-align: right;
   margin-right: 30px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;  
 }
 #pagination a {
   background: #abc5c7;
@@ -188,4 +186,28 @@ li {
 /*----------------------SECCION COMBOS----------------------*/
 #sectCombos {
   display: none;
+}
+#comboCard {
+  position: relative;
+}
+#comboDiv1,#comboDiv2, #comboDiv3, #comboDiv4 {
+  border-radius: 10px;
+  background-color: #e3e2d8f3;
+  width: 700px;
+  margin-left: 250px; 
+}
+#comboImgDiv1, #comboImgDiv2, #comboImgDiv3, #comboImgDiv4 {
+  text-align: center;
+}
+#sectCombos h2 {
+  font: bold 17px/1.4 'Poppins', sans-serif;
+  font-size: 23px;
+  margin-left: 35px;
+  margin-bottom: 5px; 
+}
+#sectCombos p {
+  margin-left: 35px; 
+  font:17px/1.4 'Poppins', sans-serif;
+  margin-top: 5px;
+  
 }

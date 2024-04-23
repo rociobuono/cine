@@ -19,21 +19,21 @@ const Cards = () => {
     const $comboImgDiv4 = document.getElementById("comboImgDiv4");
     const $comboPDiv4 = document.getElementById("comboPDiv4");
 
-    $comboTituloDiv1.appendChild(crearH(2,"comboTitulo1","BOLSA DE POCHOCLOS"));
-    //$comboImgDiv1.appendChild(crearImg("comboImg1",""));
-    $comboPDiv1.appendChild(crearP("Incluye:Bolsa de Pochoclos y 1 Gaseosa 500ml","comboP1"));
+    $comboTituloDiv1.appendChild(crearH(2,"comboTitulo1","COMBO POCHOCLOS"));
+    $comboImgDiv1.appendChild(crearImg("comboImg1","./resources/Combos/congaseosa.png"));
+    $comboPDiv1.appendChild(crearP("Incluye: Bolsa de Pochoclos y 1 Gaseosa 500ml","comboP1"));
 
     $comboTituloDiv2.appendChild(crearH(2,"comboTitulo2","NACHOS"));
-    //$comboImgDiv2.appendChild(crearImg("comboImg2",""));
-    $comboPDiv2.appendChild(crearP("Incluye:Nachos con Queso","comboP2"));
+    $comboImgDiv2.appendChild(crearImg("comboImg2","./resources/Combos/nachos.png"));
+    $comboPDiv2.appendChild(crearP("Incluye: Nachos con Queso","comboP2"));
 
     $comboTituloDiv3.appendChild(crearH(2,"comboTitulo3","BALDE DE POCHOCLOS"));
-    //$comboImgDiv3.appendChild(crearImg("comboImg3",""));
+    $comboImgDiv3.appendChild(crearImg("comboImg3","./resources/Combos/baldexl.png"));
     $comboPDiv3.appendChild(crearP("Incluye: Balde XL de Pochoclos","comboP3"));
 
     $comboTituloDiv4.appendChild(crearH(2,"comboTitulo4","BOLSA DE POCHOCLOS"));
-    //$comboImgDiv4.appendChild(crearImg("comboImg4",""));
-    $comboPDiv4.appendChild(crearP("Incluye:Bolsa de Pochoclos","comboP4"));
+    $comboImgDiv4.appendChild(crearImg("comboImg4","./resources/Combos/bolsamediana.png"));
+    $comboPDiv4.appendChild(crearP("Incluye: Bolsa de Pochoclos","comboP4"));
 }
 export default Cards;
 
