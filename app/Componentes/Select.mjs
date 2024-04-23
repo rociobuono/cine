@@ -7,7 +7,9 @@ const Select = () => {
     $select.appendChild(crearOption("", "PELICULAS")); 
     $select.appendChild(crearOption("https://www.cinespaseoaldrey.com.ar/ficha/3909-KUNG-FU-PANDA-4---2D-CAST#contenido", "KUNG FU PANDA")); 
     $select.appendChild(crearOption("https://www.cinespaseoaldrey.com.ar/ficha/3972-LA-PRIMERA-PROFECIA---2D-SUB#contenido", "LA PRIMERA PROFECIA"));
-    $select.appendChild(crearOption("https://www.cinespaseoaldrey.com.ar/ficha/3972-LA-PRIMERA-PROFECIA---2D-SUB#contenido", "SPY FAMILY"));
+    $select.appendChild(crearOption("https://www.cinespaseoaldrey.com.ar/ficha/3972-LA-PRIMERA-PROFECIA---2D-SUB#contenido", "UN GATO CON SUERTE"));
+    $select.appendChild(crearOption("https://www.cinespaseoaldrey.com.ar/ficha/3972-LA-PRIMERA-PROFECIA---2D-SUB#contenido", "BACK TO BLACK"));
+    $select.appendChild(crearOption("https://www.cinespaseoaldrey.com.ar/ficha/3972-LA-PRIMERA-PROFECIA---2D-SUB#contenido", "GUERRA CIVIL"));
     document.getElementById("selectPeliculas").onchange = function() {
         if (this.selectedIndex!==0) {
             window.location.href = this.value;
