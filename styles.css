@@ -51,8 +51,26 @@ li {
   letter-spacing: 0.15em;
   text-decoration: none;
   margin-left: 15px;
+  position: relative;
+  text-decoration: none;
 }
-
+#idInicio::before,
+#idCartelera::before,
+#idCombos::before {
+  content: '';
+  position: absolute;
+  bottom: -1px; /* Ajusta la posición del subrayado para que esté justo debajo del texto */
+  left: 0;
+  width: 0;
+  height: 1px; /* Grosor del subrayado */
+  background-color: #CFDEDF; /* Color del subrayado */
+  transition: width 0.3s ease-in-out; /* Aplica la transición solo a la anchura del subrayado */
+}
+#idInicio:hover::before,
+#idCartelera:hover::before,
+#idCombos:hover::before {
+  width: 100%; /* Ancho completo del subrayado en el estado hover */
+}
 #logoNavbar {
   /* display: inline-block; */
   max-width: 80px;
@@ -70,9 +88,9 @@ li {
 }
 
 .wrapper {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* SELECT BOX */
@@ -216,6 +234,8 @@ li {
   background-color: #e3e2d8f3;
   width: 700px;
   margin-left: 250px;
+  -webkit-box-shadow: 2px 5px 15px -2px rgba(0,0,0,0.66); 
+box-shadow: 2px 5px 15px -2px rgba(0,0,0,0.66);
 }
 
 #comboImgDiv1,
