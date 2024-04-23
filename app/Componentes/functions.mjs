@@ -43,3 +43,10 @@ export const crearOption = (value, txt) => {
     $option.innerHTML = txt;
     return $option;
 }
+
+export const crearP = (txt,id) =>{
+    let $p = document.createElement("p");
+    $p.innerHTML = txt;
+    $p.id = id;
+    return $p;
+}

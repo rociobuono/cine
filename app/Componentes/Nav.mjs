@@ -24,7 +24,7 @@ const Nav = () => {
 
    
  
-    $sectCombos.appendChild(crearH(1, "tituloCombos", "ESTA ES LA SECCION COMBOS"));
+
     $sectCartelera.appendChild(crearH(1, "tituloCartelera", "ESTA ES LA CARTELERA"));
 
     //Funciones para que al hacer click en los botones del nav solo aparezcan las secciones pertinentes
