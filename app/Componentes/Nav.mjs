@@ -22,11 +22,6 @@ const Nav = () => {
     $combos.addEventListener('mouseover', () =>{$combos.style.color ="#CFDEDF"});
     $combos.addEventListener('mouseout', () =>{$combos.style.color ="#fff"});
 
-   
- 
-
-    $sectCartelera.appendChild(crearH(1, "tituloCartelera", "ESTA ES LA CARTELERA"));
-
     //Funciones para que al hacer click en los botones del nav solo aparezcan las secciones pertinentes
     $inicio.addEventListener("click", () => {  
         $sectInicio.style.display = "block"; 
