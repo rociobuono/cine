@@ -224,18 +224,29 @@ li {
 #sectCartelera {
   display: none;
 }
+#peliculas{
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 .row {
-  width: 70%;
+  width: 100%;
   display: flex;
   margin-bottom: 40px;
 }
 .imgPelicula img {
-  width: 120px;
-  height: 180px;
+  width: auto;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
 }
+#imgCart4{
+  width: 195px;
+  height: auto;
+}
 .colIzq {
-  width: 60%;
+  width: 70%;
   display: inline-flex;
   background-color: rgb(171, 171, 171);
   border-top-left-radius: 10px;
@@ -246,7 +257,7 @@ li {
   text-align: justify;
 }
 .colDer {
-  width: 40%;
+  width: 30%;
   display: flex;
   background-color: rgb(208, 208, 208);
   align-items: center;
@@ -259,7 +270,11 @@ li {
   padding-left: 10px;
   padding-right: 10px;
 }
+.actores {
+  display: table-cell;
+}
 .colDer p, .colDer h5 {
+
   display: inline;
 }
 /*----------------------SECCION COMBOS----------------------*/
