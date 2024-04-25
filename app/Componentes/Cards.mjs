@@ -48,7 +48,7 @@ const Cards = () => {
     const $actores1 = document.getElementById("actores1");
     const $publico1 = document.getElementById("publico1");
 
-    $pelicula1I.appendChild(crearImg("cartelera1",""));
+    $pelicula1I.appendChild(crearImg("imgCart1","./resources/Peliculas/kungfupandacart.jpg"));
     $peliculaInfo1.appendChild(crearH(3,"titulo1","KUNG FU PANDA 4 - 2D CAST"));
     $peliculaInfo1.appendChild(crearP("Después de tres aventuras desafiando a la muerte y" + 
     "derrotando a villanos de clase mundial con su incomparable coraje y sus alocadas habilidades en" + 
