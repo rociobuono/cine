@@ -2,6 +2,8 @@ import { crearP, crearH, crearImg} from "./functions.mjs";
 
 const Cards = () => {
 
+    /*-------------------------------Combos-----------------------------------------*/
+
     const $comboCard = document.getElementById("comboCard");
     const $comboTituloDiv1 = document.getElementById("comboTituloDiv1");
     const $comboImgDiv1 = document.getElementById("comboImgDiv1");
@@ -34,6 +36,16 @@ const Cards = () => {
     $comboTituloDiv4.appendChild(crearH(2,"comboTitulo4","BOLSA DE POCHOCLOS"));
     $comboImgDiv4.appendChild(crearImg("comboImg4","./resources/Combos/bolsamediana.png"));
     $comboPDiv4.appendChild(crearP("Incluye: Bolsa de Pochoclos","comboP4"));
+
+    /*-------------------------------Cartelera-----------------------------------------*/
+
+    const $pelicula1I = document.getElementById("pelicula1I");
+    const $peliculaContenido1 = document.getElementById("peliculaContenido1");
+    const $peliculaInfo1 = document.getElementById("peliculaInfo1");
+    const $genero1 = document.getElementById("genero1");
+
+
+
 }
 export default Cards;
 
