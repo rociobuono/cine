@@ -44,7 +44,25 @@ const Cards = () => {
     const $peliculaInfo1 = document.getElementById("peliculaInfo1");
     const $genero1 = document.getElementById("genero1");
 
+    const $director1 = document.getElementById("director1");
+    const $actores1 = document.getElementById("actores1");
+    const $publico1 = document.getElementById("publico1");
 
+    $pelicula1I.appendChild(crearImg("cartelera1",""));
+    $peliculaInfo1.appendChild(crearH(3,"titulo1","KUNG FU PANDA 4 - 2D CAST"));
+    $peliculaInfo1.appendChild(crearP("Después de tres aventuras desafiando a la muerte y" + 
+    "derrotando a villanos de clase mundial con su incomparable coraje y sus alocadas habilidades en" + 
+    "las artes marciales, Po, el Guerrero Dragón, es llamado por el destino para tomarse un descanso." + 
+    "Específicamente, se le pide que se convierta en el líder espiritual del Valle de la Paz. ","info1"));
+    $genero1.appendChild(crearH(6,"gen1","GENERO: ANIMACION      DURACION: 94 MIN"));
+
+    $director1.appendChild(crearImg("imgDirector1",""));
+    $director1.appendChild(crearH(5,"nombreDirec1","MIKE MITCHELL"));
+    $actores1.appendChild(crearImg("imgAct1",""));
+    $actores1.appendChild(crearP("Jack Black, Angelina Jolie, Jackie Chan, Seth Rogen," + 
+    "Dustin Hoffman, Awkwafina, Viola Davis.","nombreAct1"));
+    $publico1.appendChild(crearImg("imgPublic1",""));
+    $publico1.appendChild(crearP("APTA PARA TODO PÚBLICO CON LEYENDA","public1"));
 
 }
 export default Cards;
