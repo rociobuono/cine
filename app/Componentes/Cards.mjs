@@ -38,9 +38,8 @@ const Cards = () => {
     $comboPDiv4.appendChild(crearP("Incluye: Bolsa de Pochoclos","comboP4"));
 
     /*-------------------------------Cartelera-----------------------------------------*/
-
+    //Cartelera 1
     const $pelicula1I = document.getElementById("pelicula1I");
-    const $peliculaContenido1 = document.getElementById("peliculaContenido1");
     const $peliculaInfo1 = document.getElementById("peliculaInfo1");
     const $genero1 = document.getElementById("genero1");
 
@@ -63,6 +62,105 @@ const Cards = () => {
     "Dustin Hoffman, Awkwafina, Viola Davis.","nombreAct1"));
     $publico1.appendChild(crearImg("imgPublic1",""));
     $publico1.appendChild(crearP("APTA PARA TODO PÚBLICO CON LEYENDA","public1"));
+
+    //Cartelera 2 
+    const $pelicula2I = document.getElementById("pelicula2I");
+    const $peliculaInfo2 = document.getElementById("peliculaInfo2");
+    const $genero2 = document.getElementById("genero2");
+
+    const $director2 = document.getElementById("director2");
+    const $actores2 = document.getElementById("actores2");
+    const $publico2 = document.getElementById("publico2");
+
+    $pelicula2I.appendChild(crearImg("imgCart2",""));
+    $peliculaInfo2.appendChild(crearH(3,"titulo2","LA PRIMERA PROFECIA - 2D SUB"));
+    $peliculaInfo2.appendChild(crearP("Cuando una joven estadounidense es enviada a Roma para comenzar una vida de servicio a la Iglesia," + 
+    "descubre una oscuridad que la lleva a cuestionar su propia fe y devela una conspiración aterradora que espera provocar" + 
+    "el nacimiento de la encarnación del mal.","info2"));
+    $genero2.appendChild(crearH(6,"gen2","GENERO: TERROR       DURACION: 119 MIN"));
+
+    $director2.appendChild(crearImg("imgDirecto2",""));
+    $director2.appendChild(crearH(5,"nombreDirec2","ARKASHA STEVENSON "));
+    $actores2.appendChild(crearImg("imgAct2",""));
+    $actores2.appendChild(crearP("Nell Tiger Free, Tawfeek Barhom , Sonia Braga, Ralph Ineson y Bill Nighy","nombreAct2"));
+    $publico2.appendChild(crearImg("imgPublic2",""));
+    $publico2.appendChild(crearP("APTA PARA MAYORES DE 16 AÑOS","public2"));
+
+    //Cartelera 3 
+    const $pelicula3I = document.getElementById("pelicula3I");
+    const $peliculaInfo3 = document.getElementById("peliculaInfo3");
+    const $genero3 = document.getElementById("genero3");
+
+    const $director3 = document.getElementById("director3");
+    const $actores3 = document.getElementById("actores3");
+    const $publico3 = document.getElementById("publico3");
+
+    $pelicula3I.appendChild(crearImg("imgCart3",""));
+    $peliculaInfo3.appendChild(crearH(3,"titulo3","UN GATO CON SUERTE - 2D CAST"));
+    $peliculaInfo3.appendChild(crearP("Un gato mimado da por sentada la suerte que le ha tocado tras ser rescatado y amado por Rose," + 
+    " una estudiante apasionada y de buen corazón. Cuando pierde su novena vida, el destino interviene para que emprenda" +
+    " un viaje transformador.","info3"));
+    $genero3.appendChild(crearH(6,"gen3","GENERO: ANIMACIÓN FAMILIAR      DURACION: 88 MIN"));
+
+    $director3.appendChild(crearImg("imgDirecto3",""));
+    $director3.appendChild(crearH(5,"nombreDirec3","CHRISTOPHER JENKIN"));
+    $actores3.appendChild(crearImg("imgAct3",""));
+    $actores3.appendChild(crearP("Mo Gilligan, Simone Ashley, Sophie Okonedo","nombreAct3"));
+    $publico3.appendChild(crearImg("imgPublic3",""));
+    $publico3.appendChild(crearP("APTA PARA TODO PUBLICO","public3"));
+
+    //Cartelera 4 
+
+    const $pelicula4I = document.getElementById("pelicula4I");
+    const $peliculaInfo4 = document.getElementById("peliculaInfo4");
+    const $genero4 = document.getElementById("genero4");
+
+    const $director4 = document.getElementById("director4");
+    const $actores4 = document.getElementById("actores4");
+    const $publico4 = document.getElementById("publico4");
+
+    $pelicula4I.appendChild(crearImg("imgCart4",""));
+    $peliculaInfo4.appendChild(crearH(3,"titulo4","BACK TO BLACK - 2D SUB"));
+    $peliculaInfo4.appendChild(crearP("La vida personal y profesional de la cantante y compositora Amy Winehouse," + 
+    "que comenzó como cantante de jazz para convertirse en una superestrella mundial de la música ganadora de varios premios Grammy." + 
+    "Su vida se truncó en 2011, a los 27 años, debido al consumo y abuso de alcohol y drogas.","info4"));
+    $genero4.appendChild(crearH(6,"gen4","GENERO: DRAMA MUSICAL     DURACION: 122 MIN"));
+
+    $director4.appendChild(crearImg("imgDirecto4",""));
+    $director4.appendChild(crearH(5,"nombreDirec4","Sam Taylor-Johnson"));
+    $actores4.appendChild(crearImg("imgAct4",""));
+    $actores4.appendChild(crearP("Marisa Abela. Ryan O'Doherty. Jack O'Connell. Lesley Manville." + 
+    "Eddie Marsan. Sam Buchanan. Dywayne Thomas. Thelma Ruby · Jo Krayer ","nombreAct4"));
+    $publico4.appendChild(crearImg("imgPublic4",""));
+    $publico4.appendChild(crearP("APTA PARA MAYORES DE 16 AÑOS","public4"));
+
+    //Cartelera 5
+
+    const $pelicula5I = document.getElementById("pelicula5I");
+    const $peliculaInfo5 = document.getElementById("peliculaInfo5");
+    const $genero5 = document.getElementById("genero5");
+
+    const $director5 = document.getElementById("director5");
+    const $actores5 = document.getElementById("actores5");
+    const $publico5 = document.getElementById("publico5");
+
+    $pelicula5I.appendChild(crearImg("imgCart5",""));
+    $peliculaInfo5.appendChild(crearH(3,"titulo5","GUERRA CIVIL - 2D SUB"));
+    $peliculaInfo5.appendChild(crearP("En un futuro cercano, un equipo de periodistas viaja a través de los " + 
+    "Estados Unidos durante una guerra civil que se intensifica rápidamente y que ha envuelto a toda la nación," + 
+    " luchando por sobrevivir en este territorio donde el gobierno se ha convertido en una dictadura distópica y " + 
+    "las milicias extremistas partidistas regularmente cometen actos de extrema violencia.","info5"));
+    $genero5.appendChild(crearH(6,"gen5","GENERO: ACCIÓN THRILLER      DURACION: 109 MIN"));
+
+    $director5.appendChild(crearImg("imgDirecto5",""));
+    $director5.appendChild(crearH(5,"nombreDirec5","ALEX GARLAND "));
+    $actores5.appendChild(crearImg("imgAct5",""));
+    $actores5.appendChild(crearP("Kirsten Duns, Wagner Moura, Cailee Spaeny, Jesse Plemons, Jefferson White, " + 
+    "Nick Offerman","nombreAct5"));
+    $publico5.appendChild(crearImg("imgPublic5",""));
+    $publico5.appendChild(crearP("APTA PARA MAYORES DE 16 AÑOS CON RESERVAS","public5"));
+
+
 
 }
 export default Cards;
