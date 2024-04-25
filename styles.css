@@ -54,23 +54,31 @@ li {
   position: relative;
   text-decoration: none;
 }
+
 #idInicio::before,
 #idCartelera::before,
 #idCombos::before {
   content: '';
   position: absolute;
-  bottom: -1px; /* Ajusta la posición del subrayado para que esté justo debajo del texto */
+  bottom: -1px;
+  /* Ajusta la posición del subrayado para que esté justo debajo del texto */
   left: 0;
   width: 0;
-  height: 1px; /* Grosor del subrayado */
-  background-color: #CFDEDF; /* Color del subrayado */
-  transition: width 0.3s ease-in-out; /* Aplica la transición solo a la anchura del subrayado */
+  height: 1px;
+  /* Grosor del subrayado */
+  background-color: #CFDEDF;
+  /* Color del subrayado */
+  transition: width 0.3s ease-in-out;
+  /* Aplica la transición solo a la anchura del subrayado */
 }
+
 #idInicio:hover::before,
 #idCartelera:hover::before,
 #idCombos:hover::before {
-  width: 100%; /* Ancho completo del subrayado en el estado hover */
+  width: 100%;
+  /* Ancho completo del subrayado en el estado hover */
 }
+
 #logoNavbar {
   /* display: inline-block; */
   max-width: 80px;
@@ -216,7 +224,44 @@ li {
 #sectCartelera {
   display: none;
 }
+.row {
+  width: 70%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.imgPelicula img {
+  width: 120px;
+  height: 180px;
 
+}
+.colIzq {
+  width: 60%;
+  display: inline-flex;
+  background-color: rgb(171, 171, 171);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.colIzq h3, .colIzq p, .colIzq h6 {
+  padding: 0px 20px 0px 20px ;
+  text-align: justify;
+}
+.colDer {
+  width: 40%;
+  display: flex;
+  background-color: rgb(208, 208, 208);
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.colDer img{
+  height: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.colDer p, .colDer h5 {
+  display: inline;
+}
 /*----------------------SECCION COMBOS----------------------*/
 #sectCombos {
   display: none;
@@ -234,8 +279,8 @@ li {
   background-color: #e3e2d8f3;
   width: 700px;
   margin-left: 250px;
-  -webkit-box-shadow: 2px 5px 15px -2px rgba(0,0,0,0.66); 
-box-shadow: 2px 5px 15px -2px rgba(0,0,0,0.66);
+  -webkit-box-shadow: 2px 5px 15px -2px rgba(0, 0, 0, 0.66);
+  box-shadow: 2px 5px 15px -2px rgba(0, 0, 0, 0.66);
 }
 
 #comboImgDiv1,
