@@ -91,7 +91,7 @@ li {
 /*----------------------SECCION INICIO----------------------*/
 #sectInicio {
   display: block;
-  margin-top: 80px;
+  margin-top: 10px;
   position: relative;
 }
 
@@ -100,7 +100,13 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-
+#nombreCine {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 /* SELECT BOX */
 #selectBox {
   max-width: 960px;
@@ -226,6 +232,7 @@ li {
 }
 #peliculas{
   position: relative;
+  margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -235,31 +242,39 @@ li {
   margin-bottom: 40px;
 }
 .imgPelicula img {
-  width: auto;
-  height: 100%;
+  width: 195px;
+  height: 288px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
 }
-#imgCart4{
-  width: 195px;
-  height: auto;
-}
+
 .colIzq {
   width: 70%;
+  height: 290px;
   display: inline-flex;
-  background-color: rgb(171, 171, 171);
+  background-color: rgba(171, 171, 171, 0.206);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 .colIzq h3, .colIzq p, .colIzq h6 {
   padding: 0px 20px 0px 20px ;
   text-align: justify;
+  font-family: 'Poppins', sans-serif;
+}
+.colIzq h3{
+  font-size: 20px;
+}
+.colIzq h6 {
+  font-size: 16px;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 1);
 }
 .colDer {
   width: 30%;
   display: flex;
-  background-color: rgb(208, 208, 208);
+  background-color: rgba(208, 208, 208, 0.234);
   align-items: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -272,10 +287,14 @@ li {
 }
 .actores {
   display: table-cell;
+} 
+.colDer h5{
+  font-size: 16px;
 }
 .colDer p, .colDer h5 {
-
+  font-family: 'Poppins', sans-serif;
   display: inline;
+  
 }
 /*----------------------SECCION COMBOS----------------------*/
 #sectCombos {
@@ -317,4 +336,45 @@ li {
   font: 17px/1.4 'Poppins', sans-serif;
   margin-top: 5px;
 
+}
+
+/*----------------------------FOOTER-------------------*/
+#footer {
+  position: static;
+  bottom: 0;
+  margin: 0 auto; 
+  width: 1200px;
+  height: auto;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+#infoFooter {
+  /* margin-left: 500px;*/
+  text-align: center; 
+  justify-content: center;
+}
+#botonesFooter{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#botonesFooter a {
+  color: aliceblue;
+  padding-left: 20px;
+  font: 15px 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+#copyright p {
+  font: 10px 'Poppins', sans-serif;
+  color: aliceblue;
+  padding-top: 15px;
+  padding-left: 29px;
+  /* text-align: right; */
+}
+
+#logo {
+  /* padding-left: 50px; */
+  height: 200px;
 }

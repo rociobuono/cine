@@ -1,4 +1,4 @@
-import { crearImg, crearAhref,crearLista, crearH } from "./functions.mjs";
+import { crearImg, crearAhref,crearLista, displayInicio, displayCartelera, displayCombos } from "./functions.mjs";
 const Nav = () => {
     const $idNav = document.getElementById("nav");
     const $sectInicio = document.getElementById("sectInicio");
@@ -22,22 +22,18 @@ const Nav = () => {
     $combos.addEventListener('mouseover', () =>{$combos.style.color ="#CFDEDF"});
     $combos.addEventListener('mouseout', () =>{$combos.style.color ="#fff"});
 
-    //Funciones para que al hacer click en los botones del nav solo aparezcan las secciones pertinentes
+    
     $inicio.addEventListener("click", () => {  
-        $sectInicio.style.display = "block"; 
-        $sectCombos.style.display = "none";
-        $sectCartelera.style.display = "none";
+        displayInicio($sectInicio, $sectCartelera, $sectCombos);
     });
     $cartelera.addEventListener("click", () => { 
-        $sectCartelera.style.display = "block"; 
-        $sectCombos.style.display = "none";
-        $sectInicio.style.display = "none";
+        displayCartelera($sectInicio, $sectCartelera, $sectCombos);
     });
     $combos.addEventListener("click", () => {
-        $sectCombos.style.display = "block"; 
-        $sectCartelera.style.display = "none";
-        $sectInicio.style.display = "none";
+        displayCombos($sectInicio, $sectCartelera, $sectCombos);
     });
+
+    document.getElementById("nombreCine").appendChild(crearImg("nombre","./resources/a.png"));
 }
 
 export default Nav;

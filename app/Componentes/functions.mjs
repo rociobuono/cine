@@ -44,9 +44,25 @@ export const crearOption = (value, txt) => {
     return $option;
 }
 
-export const crearP = (txt,id) =>{
+export const crearP = (txt, id) => {
     let $p = document.createElement("p");
     $p.innerHTML = txt;
     $p.id = id;
     return $p;
+}
+//Funciones para que al hacer click en los botones del nav solo aparezcan las secciones pertinentes
+export const displayInicio = ($sectInicio, $sectCartelera, $sectCombos) => {
+    $sectInicio.style.display = "block";
+    $sectCombos.style.display = "none";
+    $sectCartelera.style.display = "none";
+}
+export const displayCartelera = ($sectInicio, $sectCartelera, $sectCombos) => {
+    $sectCartelera.style.display = "block";
+    $sectCombos.style.display = "none";
+    $sectInicio.style.display = "none";
+}
+export const displayCombos = ($sectInicio, $sectCartelera, $sectCombos) => {
+    $sectCombos.style.display = "block";
+    $sectCartelera.style.display = "none";
+    $sectInicio.style.display = "none";
 }

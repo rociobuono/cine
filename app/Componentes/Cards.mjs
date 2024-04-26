@@ -53,9 +53,8 @@ const Cards = () => {
     $peliculaInfo1.appendChild(crearH(3,"titulo1","KUNG FU PANDA 4 - 2D CAST"));
     $peliculaInfo1.appendChild(crearP("Después de tres aventuras desafiando a la muerte y" + 
     "derrotando a villanos de clase mundial con su incomparable coraje y sus alocadas habilidades en" + 
-    "las artes marciales, Po, el Guerrero Dragón, es llamado por el destino para tomarse un descanso." + 
-    "Específicamente, se le pide que se convierta en el líder espiritual del Valle de la Paz. ","info1"));
-    $genero1.appendChild(crearH(6,"gen1","GENERO: ANIMACION      DURACION: 94 MIN"));
+    "las artes marciales, Po, el Guerrero Dragón, es llamado por el destino para tomarse un descanso.","info1"));
+    $genero1.appendChild(crearH(6,"gen1","GENERO: ANIMACION   |   DURACION: 94 MIN"));
 
     $director1.appendChild(crearImg("imgDirector1","./resources/Cartelera/director.png"));
     $director1.appendChild(crearH(5,"nombreDirec1","MIKE MITCHELL"));
@@ -86,7 +85,7 @@ const Cards = () => {
     $director2.appendChild(crearImg("imgDirector2","./resources/Cartelera/director.png"));
     $director2.appendChild(crearH(5,"nombreDirec2","ARKASHA STEVENSON "));
     $actores2logo.appendChild(crearImg("imgAct2","./resources/Cartelera/estrella.png"));
-    $actores2txt.appendChild(crearP("Nell Tiger Free, Tawfeek Barhom , Sonia Braga, Ralph Ineson y Bill Nighy","nombreAct2"));
+    $actores2txt.appendChild(crearP("Nell Tiger Free, Tawfeek Barhom , Sonia Braga, Ralph Ineson y Bill Nighy.","nombreAct2"));
     $publico2.appendChild(crearImg("imgPublic2","./resources/Cartelera/publico.png"));
     $publico2.appendChild(crearP("APTA PARA MAYORES DE 16 AÑOS","public2"));
 
@@ -105,12 +104,12 @@ const Cards = () => {
     $peliculaInfo3.appendChild(crearP("Un gato mimado da por sentada la suerte que le ha tocado tras ser rescatado y amado por Rose," + 
     " una estudiante apasionada y de buen corazón. Cuando pierde su novena vida, el destino interviene para que emprenda" +
     " un viaje transformador.","info3"));
-    $genero3.appendChild(crearH(6,"gen3","GENERO: ANIMACIÓN FAMILIAR      DURACION: 88 MIN"));
+    $genero3.appendChild(crearH(6,"gen3","GENERO: ANIMACIÓN FAMILIAR   |   DURACION: 88 MIN"));
 
     $director3.appendChild(crearImg("imgDirector3","./resources/Cartelera/director.png"));
     $director3.appendChild(crearH(5,"nombreDirec3","CHRISTOPHER JENKIN"));
     $actores3logo.appendChild(crearImg("imgAct3","./resources/Cartelera/estrella.png"));
-    $actores3txt.appendChild(crearP("Mo Gilligan, Simone Ashley, Sophie Okonedo","nombreAct3"));
+    $actores3txt.appendChild(crearP("Mo Gilligan, Simone Ashley, Sophie Okonedo.","nombreAct3"));
     $publico3.appendChild(crearImg("imgPublic3","./resources/Cartelera/publico.png"));
     $publico3.appendChild(crearP("APTA PARA TODO PUBLICO","public3"));
 
@@ -130,13 +129,13 @@ const Cards = () => {
     $peliculaInfo4.appendChild(crearP("La vida personal y profesional de la cantante y compositora Amy Winehouse," + 
     "que comenzó como cantante de jazz para convertirse en una superestrella mundial de la música ganadora de varios premios Grammy." + 
     "Su vida se truncó en 2011, a los 27 años, debido al consumo y abuso de alcohol y drogas.","info4"));
-    $genero4.appendChild(crearH(6,"gen4","GENERO: DRAMA MUSICAL     DURACION: 122 MIN"));
+    $genero4.appendChild(crearH(6,"gen4","GENERO: DRAMA MUSICAL  |   DURACION: 122 MIN"));
 
     $director4.appendChild(crearImg("imgDirector4","./resources/Cartelera/director.png"));
-    $director4.appendChild(crearH(5,"nombreDirec4","Sam Taylor-Johnson"));
+    $director4.appendChild(crearH(5,"nombreDirec4","SAM TAYLOR-JONHSON"));
     $actores4logo.appendChild(crearImg("imgAct4","./resources/Cartelera/estrella.png"));
-    $actores4txt.appendChild(crearP("Marisa Abela. Ryan O'Doherty. Jack O'Connell. Lesley Manville." + 
-    "Eddie Marsan. Sam Buchanan. Dywayne Thomas. Thelma Ruby · Jo Krayer ","nombreAct4"));
+    $actores4txt.appendChild(crearP("Marisa Abela, Ryan O'Doherty, Jack O'Connell, Lesley Manville," + 
+    "Eddie Marsan, Sam Buchanan, Dywayne Thomas, Thelma Ruby, Jo Krayer. ","nombreAct4"));
     $publico4.appendChild(crearImg("imgPublic4","./resources/Cartelera/publico.png"));
     $publico4.appendChild(crearP("APTA PARA MAYORES DE 16 AÑOS","public4"));
 
@@ -155,15 +154,14 @@ const Cards = () => {
     $peliculaInfo5.appendChild(crearH(3,"titulo5","GUERRA CIVIL - 2D SUB"));
     $peliculaInfo5.appendChild(crearP("En un futuro cercano, un equipo de periodistas viaja a través de los " + 
     "Estados Unidos durante una guerra civil que se intensifica rápidamente y que ha envuelto a toda la nación," + 
-    " luchando por sobrevivir en este territorio donde el gobierno se ha convertido en una dictadura distópica y " + 
-    "las milicias extremistas partidistas regularmente cometen actos de extrema violencia.","info5"));
-    $genero5.appendChild(crearH(6,"gen5","GENERO: ACCIÓN THRILLER      DURACION: 109 MIN"));
+    " luchando por sobrevivir en este territorio donde el gobierno se ha convertido en una dictadura distópica.","info5"));
+    $genero5.appendChild(crearH(6,"gen5","GENERO: ACCIÓN THRILLER   |   DURACION: 109 MIN"));
 
     $director5.appendChild(crearImg("imgDirector5","./resources/Cartelera/director.png"));
     $director5.appendChild(crearH(5,"nombreDirec5","ALEX GARLAND "));
     $actores5logo.appendChild(crearImg("imgAct5","./resources/Cartelera/estrella.png"));
     $actores5txt.appendChild(crearP("Kirsten Duns, Wagner Moura, Cailee Spaeny, Jesse Plemons, Jefferson White, " + 
-    "Nick Offerman","nombreAct5"));
+    "Nick Offerman.","nombreAct5"));
     $publico5.appendChild(crearImg("imgPublic5","./resources/Cartelera/publico.png"));
     $publico5.appendChild(crearP("APTA PARA MAYORES DE 16 AÑOS","public5"));
 
