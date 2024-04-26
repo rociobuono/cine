@@ -225,7 +225,33 @@ li {
     opacity: 1
   }
 }
-
+/*GALLERY OFERTAS*/
+.row2 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+}
+.row2 img, .row3 img {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.row3{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.column2 {
+  float: left;
+  width:  25%;
+  padding: 5px;
+}
 /*----------------------SECCION CARTELERA----------------------*/
 #sectCartelera {
   display: none;
