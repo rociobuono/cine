@@ -92,5 +92,6 @@ const Carousel = () => {
   $pag4.addEventListener("mouseout",() =>{$pag4.style.background="#abc5c7"})
   $pag5.addEventListener("mouseover",() =>{$pag5.style.background="#709ea1"})
   $pag5.addEventListener("mouseout",() =>{$pag5.style.background="#abc5c7"})
+
 }
 export default Carousel;
