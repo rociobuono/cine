@@ -7,8 +7,9 @@ export async function GET(url, data = {}){
     return await fetch(backendurl + url + objString, {
         method:'GET',
         mode: 'cors',
-        headers: ´
+        headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
     })
     .then((res) => res.json())
     .then((res)=>res)
