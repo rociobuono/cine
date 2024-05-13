@@ -27,7 +27,7 @@ const Footer = () => {
         displayCombos($sectInicio, $sectCartelera, $sectCombos);
     });
 
-    $copyright.appendChild(crearP("Copyright © BUONO-QUIKUEN. Todos los derechos reservados.", "txtCop"));
+    $copyright.appendChild(crearP("Copyright © BUONO-QUIKUEN. Todos los derechos reservados."));
     $logo.appendChild(crearImg("logo", "./resources/logoConNombre.png"));
 }
 export default Footer;

@@ -1,5 +1,5 @@
-import { crearP, crearH, crearImg} from "./functions.mjs";
-
+import { crearP, crearH, crearHa, crearImg } from "./functions.mjs";
+import { GET } from "../../services/fetch.mjs";
 const Cards = () => {
 
     /*-------------------------------Combos-----------------------------------------*/
@@ -37,16 +37,67 @@ const Cards = () => {
     $comboImgDiv4.appendChild(crearImg("comboImg4","./resources/Combos/bolsamediana.png"));
     $comboPDiv4.appendChild(crearP("Incluye: Bolsa de Pochoclos","comboP4"));
 
+
     /*-------------------------------Cartelera-----------------------------------------*/
-    const url = "CarteleraController/GET";
+    const url = "CarteleraController/";
     const cargarPeliculas = async () => {
         let rsp = await GET(url + 'get');
-        if(rsp?.Error == false)
+        console.log(rsp);
+
+        let $peliculas = document.getElementById("peliculas");
+        if(rsp?.error === false)
         {
-            setItems(rsp.Data);
-            setActual(0);
+            rsp.data.forEach((el) => {
+                //console.log(document.createElement);
+                let $div = document.createElement("div");
+                $div.setAttribute("id", `pelicula${el.id}`);
+                $div.classList.add("row");
+
+                let $colIz = document.createElement("div");
+                let $colDe = document.createElement("div");
+                $colIz.classList.add("colIzq");
+                $colDe.classList.add("colDer");
+                $div.appendChild($colIz);
+                $div.appendChild($colDe);
+                
+                let $imgPel = document.createElement("div");
+                $imgPel.classList.add("imgPelicula");
+                $colIz.appendChild($imgPel);
+
+                let $img = document.createElement("img");
+                $img.setAttribute("src", el.url);
+                $imgPel.appendChild($img);
+
+
+
+                let $pelCont = document.createElement("div");
+                $colIz.appendChild($pelCont);
+
+                let $pelInfo = document.createElement("div");
+                $pelInfo.appendChild(crearHa(3,el.titulo));
+                $pelInfo.appendChild(crearP(el.sinopsis));
+
+                let $genero = document.createElement("div");
+                $genero.appendChild(crearHa(6,el.genero));
+
+                $pelCont.appendChild($pelInfo);
+                $pelCont.appendChild($genero);
+
+                let $aside = document.createElement("aside");
+                $colDe.appendChild($aside);
+
+                let $director = document.createElement("div");
+                $director.appendChild(crearImg("silla","resources\Cartelera\director.png"));
+                $director.appendChild(crearHa(5,el.director));
+
+
+                $peliculas.appendChild($div);
+            });
+
         }
     }
+    cargarPeliculas();
+    /*
     //Cartelera 1
     const $peliculaInfo1 = document.getElementById("peliculaInfo1");
     const $genero1 = document.getElementById("genero1");
@@ -172,7 +223,7 @@ const Cards = () => {
     "Nick Offerman.","nombreAct5"));
     $publico5.appendChild(crearImg("imgPublic5","./resources/Cartelera/publico.png"));
     $publico5.appendChild(crearP("APTA PARA MAYORES DE 16 AÑOS","public5"));
-
+    */
 
 
 }
