@@ -31,6 +31,11 @@ export const crearH = (num, id, txt) => {
     $h.setAttribute("id", id);
     return $h;
 }
+export const crearHa = (num, txt) => {
+    let $h = document.createElement(`h${num}`);
+    $h.innerHTML = txt;
+    return $h;
+}
 export const crearSelect = (name, id) => {
     let $select = document.createElement("select");
     $select.name = name;
@@ -44,10 +49,9 @@ export const crearOption = (value, txt) => {
     return $option;
 }
 
-export const crearP = (txt, id) => {
+export const crearP = (txt) => {
     let $p = document.createElement("p");
     $p.innerHTML = txt;
-    $p.id = id;
     return $p;
 }
 //Funciones para que al hacer click en los botones del nav solo aparezcan las secciones pertinentes
