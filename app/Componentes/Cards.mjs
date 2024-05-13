@@ -38,14 +38,10 @@ const Cards = () => {
     $comboPDiv4.appendChild(crearP("Incluye: Bolsa de Pochoclos","comboP4"));
 
     /*-------------------------------Cartelera-----------------------------------------*/
-    const url = "CarteleraController/GET";
+    const url = "CarteleraController/";
     const cargarPeliculas = async () => {
         let rsp = await GET(url + 'get');
-        if(rsp?.Error == false)
-        {
-            setItems(rsp.Data);
-            setActual(0);
-        }
+        console.log(rsp);
     }
     //Cartelera 1
     const $peliculaInfo1 = document.getElementById("peliculaInfo1");
