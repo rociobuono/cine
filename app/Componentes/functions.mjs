@@ -10,6 +10,11 @@ export const crearImg = (id, src) => {
     $img.src = src;
     return $img;
 }
+export const crearImgA = ( src) => {
+    let $img = document.createElement("img");
+    $img.src = src;
+    return $img;
+}
 export const crearAhref = (id, href, txt) => {
     let $a = document.createElement("a");
     $a.setAttribute("id", id);

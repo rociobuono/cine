@@ -1,10 +1,9 @@
-import { crearP, crearH, crearHa, crearImg } from "./functions.mjs";
+import { crearP, crearH, crearHa, crearImg, crearImgA } from "./functions.mjs";
 import { GET } from "../../services/fetch.mjs";
 const Cards = () => {
 
     /*-------------------------------Combos-----------------------------------------*/
 
-    const $comboCard = document.getElementById("comboCard");
     const $comboTituloDiv1 = document.getElementById("comboTituloDiv1");
     const $comboImgDiv1 = document.getElementById("comboImgDiv1");
     const $comboPDiv1 = document.getElementById("comboPDiv1");
@@ -68,8 +67,6 @@ const Cards = () => {
                 $img.setAttribute("src", el.url);
                 $imgPel.appendChild($img);
 
-
-
                 let $pelCont = document.createElement("div");
                 $colIz.appendChild($pelCont);
 
@@ -87,9 +84,25 @@ const Cards = () => {
                 $colDe.appendChild($aside);
 
                 let $director = document.createElement("div");
-                $director.appendChild(crearImg("silla","resources\Cartelera\director.png"));
+                $director.appendChild(crearImgA("./resources/Cartelera/director.png"));
                 $director.appendChild(crearHa(5,el.director));
 
+                let $actores = document.createElement("div");
+                $actores.classList.add("actores");
+                $actores.appendChild(crearImgA("./resources/Cartelera/estrella.png"));
+                
+                let $actorestxt = document.createElement("div");
+                $actorestxt.classList.add("actores");
+                $actorestxt.appendChild(crearP(el.actores));
+
+                let $publico = document.createElement("div");
+                $publico.appendChild(crearImgA("./resources/Cartelera/publico.png"));
+                $publico.appendChild(crearP(el.publico));
+
+                $aside.appendChild($director);
+                $aside.appendChild($actores);
+                $aside.appendChild($actorestxt);
+                $aside.appendChild($publico);
 
                 $peliculas.appendChild($div);
             });
