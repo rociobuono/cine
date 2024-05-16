@@ -4,7 +4,7 @@ const Cards = () => {
 
     /*-------------------------------Combos-----------------------------------------*/
 
-    const $comboTituloDiv1 = document.getElementById("comboTituloDiv1");
+    /*const $comboTituloDiv1 = document.getElementById("comboTituloDiv1");
     const $comboImgDiv1 = document.getElementById("comboImgDiv1");
     const $comboPDiv1 = document.getElementById("comboPDiv1");
 
@@ -34,7 +34,37 @@ const Cards = () => {
 
     $comboTituloDiv4.appendChild(crearH(2,"comboTitulo4","BOLSA DE POCHOCLOS"));
     $comboImgDiv4.appendChild(crearImg("comboImg4","./resources/Combos/bolsamediana.png"));
-    $comboPDiv4.appendChild(crearP("Incluye: Bolsa de Pochoclos","comboP4"));
+    $comboPDiv4.appendChild(crearP("Incluye: Bolsa de Pochoclos","comboP4"));*/
+    
+    const url2 = "CombosController/"
+    const cargarCombos = async () => {
+        let rsp = await GET (url + 'get');
+        console.log(rsp);
+        let $combos = document.getElementById("comboCard");
+        if(rsp?.error === false){
+            rsp.data.forEach(el => {
+                let $div = document.createElement("div");
+                $div.classList.add("combo");
+                
+                let $tituloCombo = document.createElement("div");
+                $tituloCombo.classList.add("tituloCombo");
+                $div.appendChild($tituloCombo);
+                $tituloCombo.crearHa(2, el.titulo);
+
+                let $imgCombo = document.createElement("div");
+                $imgCombo.classList.add("imgCombo");
+                $div.appendChild($imgCombo);
+                $imgCombo.crearImgA(el.imagen);
+
+                let $descrCombo = document.createElement("div");
+                $descrCombo.classList.add("descrCombo");
+                $div.appendChild($descrCombo);
+                $descrCombo.crearP(el.descripcion);
+                        
+                $combos.appendChild($div);
+            });
+        }
+    }
 
 
     /*-------------------------------Cartelera-----------------------------------------*/
