@@ -49,17 +49,17 @@ const Cards = () => {
                 let $tituloCombo = document.createElement("div");
                 $tituloCombo.classList.add("tituloCombo");
                 $div.appendChild($tituloCombo);
-                $tituloCombo.crearHa(2, el.titulo);
+                $tituloCombo.appendChild(crearHa(2, el.titulo));
 
                 let $imgCombo = document.createElement("div");
                 $imgCombo.classList.add("imgCombo");
                 $div.appendChild($imgCombo);
-                $imgCombo.crearImgA(el.imagen);
+                $imgCombo.appendChild(crearImgA(el.imagen));
 
                 let $descrCombo = document.createElement("div");
                 $descrCombo.classList.add("descrCombo");
                 $div.appendChild($descrCombo);
-                $descrCombo.crearP(el.descripcion);
+                $descrCombo.appendChild(crearP(el.descripcion));
                         
                 $combos.appendChild($div);
             });
