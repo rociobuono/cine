@@ -65,7 +65,7 @@ const Cards = () => {
             });
         }
     }
-
+    cargarCombos();
 
     /*-------------------------------Cartelera-----------------------------------------*/
     const url = "CarteleraController/";
