@@ -38,7 +38,7 @@ const Cards = () => {
     
     const url2 = "CombosController/"
     const cargarCombos = async () => {
-        let rsp = await GET (url + 'get');
+        let rsp = await GET (url2 + 'get');
         console.log(rsp);
         let $combos = document.getElementById("comboCard");
         if(rsp?.error === false){
