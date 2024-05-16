@@ -331,10 +331,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   position: relative;
 }
 
-#comboDiv1,
-#comboDiv2,
-#comboDiv3,
-#comboDiv4 {
+.combo {
   border-radius: 10px;
   background-color: #e3e2d8f3;
   width: 700px;
@@ -343,10 +340,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   box-shadow: 2px 5px 15px -2px rgba(0, 0, 0, 0.66);
 }
 
-#comboImgDiv1,
-#comboImgDiv2,
-#comboImgDiv3,
-#comboImgDiv4 {
+.imgCombo {
   text-align: center;
 }
 

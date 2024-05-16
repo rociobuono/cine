@@ -17,5 +17,6 @@ const Gallery = () =>{
     $oferta6.appendChild(crearImg("of6", "./resources/ofertas/osde.png"));
     $oferta7.appendChild(crearImg("of7", "./resources/ofertas/movi.png"));
     $oferta8.appendChild(crearImg("of8", "./resources/ofertas/bconacion.png"));
+
 }
 export default Gallery ;
